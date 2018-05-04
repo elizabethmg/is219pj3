@@ -98,12 +98,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
-	
-	
-	
-	
-	
-	
+	var title = "IMBD + Elizabeth's Top 8 Movies";
+	var owner = "Elizabeth";
+	var github = "https://github.com/elizabethmg/is219pj3.git";
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
