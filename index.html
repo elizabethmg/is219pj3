@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
 	<title>IS219 Gallery (Project 3)</title>
 
@@ -21,7 +21,7 @@
 	
 </head>
 
-  <body  ng-controller="HomeController">
+  <body ng-app="app" ng-controller="HomeController">
 	  
     <div class="header">
 	    
@@ -36,7 +36,7 @@
       <div class="container">
 
         <div class="col-md-6"> 
-            <div class="thumbnail">
+            <div class="thumbnail" ng-repeat="x in movies">{{x}}>
 
 					<img class="poster" {{posters}} {{posterindex}} />
 					<div class="imageInfo">{{posterindex}}</div>
@@ -48,7 +48,7 @@
 					<p class="websites">Websites: <a>{{imdb}}</a> | <a>{{website}}</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{like}}</p>
+		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likes}}</p>
 		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{dislike}}</p>
 		            </div>
             </div> 
@@ -64,7 +64,6 @@
   		</a>
       </div>
     </div>
-
   
   	<!-- Modules -->
 	<script type="text/javascript" src="js/app.js"></script>
