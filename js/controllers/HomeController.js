@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+// var app = angular.module('IS219Gallery', []);
 app.controller('HomeController', ['$scope', function($scope) {
 	
 	
@@ -91,7 +91,52 @@ app.controller('HomeController', ['$scope', function($scope) {
       posterindex: 0
 	}
 	
-	
+	/*added posters */
+
+      { 
+      title:      'Beauty and The Beast', 
+      iscore:     10.0,
+      rating:     'PG',
+      runtime:    129,
+      released:   new Date('2017', '03', '17'),
+      country:    'USA',
+      posters:    ['img/batb1.jpg','img/batb2.jpg','img/batb3.jpg'],
+      imdb:       'https://www.imdb.com/title/tt2771200/',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      1200,
+      dislikes:   50,
+      posterindex: 0
+      },
+
+      { 
+      title:      'Monsters University', 
+      iscore:     8.9,
+      rating:     'G',
+      runtime:    120,
+      released:   new Date('2013', '06', '21'),
+      country:    'USA',
+      posters:    ['img/mu1.jpg','img/mu2.jpg','img/mu3.jpg'],
+      imdb:       'https://www.imdb.com/title/tt1453405/?ref_=nv_sr_1',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      903,
+      dislikes:   41,
+      posterindex: 0
+      },
+
+      { 
+      title:      'Finding Dory', 
+      iscore:     8.3,
+      rating:     'PG',
+      runtime:    115,
+      released:   new Date('2016', '06', '17'),
+      country:    'USA',
+      posters:    ['img/shawshank.jpg','img/shawshank2.jpg','img/shawshank3.jpg'],
+      imdb:       'https://www.imdb.com/title/tt2277860/?ref_=nv_sr_2',
+      website:    'https://www.facebook.com/ShawshankRedemptionFilm',
+      likes:      1019,
+      dislikes:   300,
+      posterindex: 0
+      },
   ];
 	
 	
