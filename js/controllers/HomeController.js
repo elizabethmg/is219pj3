@@ -1,4 +1,3 @@
-// var app = angular.module('IS219Gallery', []);
 app.controller('HomeController', ['$scope', function($scope) {
 	
 	
@@ -139,9 +138,6 @@ app.controller('HomeController', ['$scope', function($scope) {
       },
   ];
 	
-	
-
-	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
 	$scope.title = "IMBD + Elizabeth's Top 8 Movies";
@@ -150,12 +146,25 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
-	
-	
-	
-	
-	
-	
-	
-	
-}]);
+	$scope.like = function(index)
+                {
+                  $scope.movies[index].likes += 1;
+                };
+                
+                $scope.dislike = function(index)
+                {
+                  $scope.movies[index].dislikes += 1;                          
+                };
+                
+                $scope.posterClick = function(index)
+                {                                              
+                  if($scope.movies[index].posterindex < $scope.movies[index].posters.length - 1)
+                  {
+                    $scope.movies[index].posterindex += 1;
+                  }
+                  else
+                  {
+                    $scope.movies[index].posterindex = 0;
+                  }
+                };	
+            }]);
